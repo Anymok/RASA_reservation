@@ -2,6 +2,10 @@ version: "3.1"
 
 intents:
   - salutation
+  - booking
+  - when
+  - where
+  - end
 
 responses:
   utter_salutation:
@@ -11,7 +15,16 @@ responses:
 
   utter_when:
   - text: |
-      - Bien sûr, pour quand ?
+      - Bien sûr, pour quelle date ?
+
+  utter_where:
+  - text: |
+      - Parfait, pour quelle ville ?
+  
+  utter_end:
+  - text: |
+      - Pour résumer, vous voulez un hôtel à (VILLE) pour le (DATE) ?
+      
       
 session_config:
   session_expiration_time: 60

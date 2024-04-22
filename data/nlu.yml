@@ -16,15 +16,27 @@ nlu:
     - je veux reserver un hotel
     - Je veux un hotel
     - reserver hotel
+    - je veux une chambre
+    - je veux reserver une chambre
+    - je veux reserver
 
 - intent: when
   examples: |
+    - Je voudrai le réserver pour le
+    - Je voudrai venir le
     - pour le
+    - Je veux venir au
+    - Je veux venir le
 
 - intent: where
   examples: |
-    - date
+    - Je voudrai venir à
+    - à
+    - Pour 
+    - Je veux venir à 
 
 - intent: end
   examples: |
-    - date
+    - Oui
+    - Exctement
+    - C'est ça

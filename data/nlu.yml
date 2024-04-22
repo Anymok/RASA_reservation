@@ -1,0 +1,30 @@
+version: "3.1"
+
+nlu:
+- intent: salutation
+  examples: |
+    - salut
+    - bonjour à toi
+    - allons-y
+    - salut mec
+    - bonjour
+    - bonsoir
+    - bon après-midi
+
+- intent: booking
+  examples: |
+    - je veux reserver un hotel
+    - Je veux un hotel
+    - reserver hotel
+
+- intent: when
+  examples: |
+    - pour le
+
+- intent: where
+  examples: |
+    - date
+
+- intent: end
+  examples: |
+    - date

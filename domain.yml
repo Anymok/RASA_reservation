@@ -1,0 +1,18 @@
+version: "3.1"
+
+intents:
+  - salutation
+
+responses:
+  utter_salutation:
+  - text: |
+      - Bonjour !
+      - Que puis-je pour vous ?
+
+  utter_when:
+  - text: |
+      - Bien sûr, pour quand ?
+      
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

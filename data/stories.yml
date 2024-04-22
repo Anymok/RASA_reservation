@@ -1,0 +1,14 @@
+version: "3.1"
+
+stories:
+- story: request_booking
+  steps:
+  - intent: salutation
+  - action: utter_salutation
+  - intent: booking
+  - action: utter_when
+  - intent: when
+  - action: utter_where
+  - intent: where
+  - action: utter_end
+  - intent: end

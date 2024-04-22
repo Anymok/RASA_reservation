@@ -22,21 +22,295 @@ nlu:
 
 - intent: when
   examples: |
-    - Je voudrai le réserver pour le
-    - Je voudrai venir le
-    - pour le
-    - Je veux venir au
-    - Je veux venir le
+    - Je voudrai le réserver pour le [28 aout 2024](date)
+    - Mettons-nous d'accord sur le [16 juillet](date)
+    - Le [11 septembre 2024](date) serait idéal pour moi
+    - J'aimerais réserver cette date pour le [11 juin](date)
+    - [9 novembre 2025](date)
 
 - intent: where
   examples: |
-    - Je voudrai venir à
-    - à
-    - Pour 
-    - Je veux venir à 
+    - Je voudrai venir à [Nantes](city)
+    - Pour [Paris](city)
+    - J'aimerais me rendre à [Le Havre](city)
+    - [Dieppe](city)
 
 - intent: end
   examples: |
     - Oui
-    - Exctement
+    - Exactement
     - C'est ça
+
+- lookup: city
+  examples: |
+    - Paris
+    - Marseille
+    - Lyon
+    - Toulouse
+    - Nice
+    - Nantes
+    - Strasbourg
+    - Montpellier
+    - Bordeaux
+    - Lille
+    - Rennes
+    - Reims
+    - Le Havre
+    - Saint-Étienne
+    - Toulon
+    - Grenoble
+    - Dijon
+    - Angers
+    - Nîmes
+    - Villeurbanne
+    - Saint-Denis
+    - Le Mans
+    - Aix-en-Provence
+    - Clermont-Ferrand
+    - Brest
+    - Limoges
+    - Tours
+    - Amiens
+    - Perpignan
+    - Metz
+    - Besançon
+    - Boulogne-Billancourt
+    - Orléans
+    - Saint-Denis
+    - Argenteuil
+    - Rouen
+    - Montreuil
+    - Mulhouse
+    - Caen
+    - Saint-Paul
+    - Nancy
+    - Tourcoing
+    - Roubaix
+    - Nanterre
+    - Vitry-sur-Seine
+    - Avignon
+    - Créteil
+    - Dunkerque
+    - Poitiers
+    - Asnières-sur-Seine
+    - Courbevoie
+    - Versailles
+    - Colombes
+    - Fort-de-France
+    - Aulnay-sous-Bois
+    - Saint-Pierre
+    - Rueil-Malmaison
+    - Pau
+    - Aubervilliers
+    - Le Tampon
+    - Antibes
+    - La Rochelle
+    - Champigny-sur-Marne
+    - Saint-Maur-des-Fossés
+    - Calais
+    - Issy-les-Moulineaux
+    - La Seyne-sur-Mer
+    - Noisy-le-Grand
+    - Sarcelles
+    - Levallois-Perret
+    - Ajaccio
+    - Vénissieux
+    - Cergy
+    - Saint-Quentin
+    - Béziers
+    - Pessac
+    - La Roche-sur-Yon
+    - Cholet
+    - Charleville-Mézières
+    - Saint-Nazaire
+    - Chambéry
+    - Beauvais
+    - Grasse
+    - Tarbes
+    - Vannes
+    - Lorient
+    - Évreux
+    - Marcq-en-Barœul
+    - Villeneuve-d'Ascq
+    - Bastia
+    - Niort
+    - Cambrai
+    - Colmar
+    - Pontault-Combault
+    - Vincennes
+    - Sète
+    - Albi
+    - Sartrouville
+    - Livry-Gargan
+    - Maisons-Alfort
+    - Ivry-sur-Seine
+    - Chalon-sur-Saône
+    - Meaux
+    - Saint-Germain-en-Laye
+    - Gagny
+    - Saint-Laurent-du-Maroni
+    - Bagneux
+    - Montrouge
+    - Saint-Cloud
+    - Chelles
+    - Compiègne
+    - Bondy
+    - Clamart
+    - Clichy
+    - Troyes
+    - Nevers
+    - Les Abymes
+    - Le Blanc-Mesnil
+    - Noisy-le-Sec
+    - Vaulx-en-Velin
+    - Sartrouville
+    - Échirolles
+    - Meudon
+    - Saint-Benoît
+    - Vienne
+    - Rosny-sous-Bois
+    - L'Haÿ-les-Roses
+    - Épinal
+    - Alfortville
+    - Savigny-sur-Orge
+    - Saint-Ouen
+    - Bastia
+    - Sevran
+    - Sainte-Marie
+    - Gap
+    - Bagnolet
+    - Saint-Leu
+    - Châlons-en-Champagne
+    - Saint-Priest
+    - Wattrelos
+    - Lens
+    - Conflans-Sainte-Honorine
+    - Montluçon
+    - La Courneuve
+    - Saint-Martin-d'Hères
+    - Palaiseau
+    - Auxerre
+    - Le Perreux-sur-Marne
+    - Cormeilles-en-Parisis
+    - Neuilly-sur-Marne
+    - Villejuif
+    - Savigny-le-Temple
+    - Saint-Raphaël
+    - Massy
+    - Le Cannet
+    - Liévin
+    - Houilles
+    - Hyères
+    - Garges-lès-Gonesse
+    - La Ciotat
+    - Épinal
+    - Le Plessis-Robinson
+    - Le Kremlin-Bicêtre
+    - Villefranche-sur-Saône
+    - Châtillon
+    - Saint-Chamond
+    - Villepinte
+    - Sarreguemines
+    - Savigny-sur-Orge
+    - Montereau-Fault-Yonne
+    - Stains
+    - Fontenay-sous-Bois
+    - Talence
+    - Concarneau
+    - Yerres
+    - Le Lamentin
+    - Puteaux
+    - Villiers-sur-Marne
+    - Trappes
+    - Thonon-les-Bains
+    - La Garenne-Colombes
+    - Six-Fours-les-Plages
+    - Cachan
+    - Les Mureaux
+    - Maubeuge
+    - Châtenay-Malabry
+    - Villeurbanne
+    - Chatou
+    - L'Haÿ-les-Roses
+    - Sannois
+    - La Possession
+    - Savigny-le-Temple
+    - Le Mée-sur-Seine
+    - Le Chesnay-Rocquencourt
+    - Drancy
+    - Schiltigheim
+    - Sainte-Geneviève-des-Bois
+    - Vandœuvre-lès-Nancy
+    - Roanne
+    - Saint-Étienne-du-Rouvray
+    - Belfort
+    - Périgueux
+    - Gennevilliers
+    - Saint-Médard-en-Jalles
+    - Agen
+    - Rezé
+    - Goussainville
+    - Ris-Orangis
+    - Saint-Malo
+    - Annemasse
+    - Villenave-d'Ornon
+    - Montigny-le-Bretonneux
+    - Villemomble
+    - Sainte-Marie
+    - Gif-sur-Yvette
+    - Cagnes-sur-Mer
+    - Saint-Martin-d'Hères
+    - Choisy-le-Roi
+    - Anglet
+    - Romainville
+    - Vandœuvre-lès-Nancy
+    - Schiltigheim
+    - Saint-Étienne-du-Rouvray
+    - Belfort
+    - Périgueux
+    - Gennevilliers
+    - Saint-Médard-en-Jalles
+    - Agen
+    - Rezé
+    - Goussainville
+    - Ris-Orangis
+    - Saint-Malo
+    - Annemasse
+    - Villenave-d'Ornon
+    - Montigny-le-Bretonneux
+    - Villemomble
+    - Sainte-Marie
+    - Gif-sur-Yvette
+    - Cagnes-sur-Mer
+    - Saint-Martin-d'Hères
+    - Choisy-le-Roi
+    - Anglet
+    - Romainville
+
+
+- lookup: date
+  examples: |
+    - 9 janvier
+    - 15 février
+    - 3 mars
+    - 22 avril
+    - 18 mai
+    - 11 juin
+    - 7 juillet
+    - 30 août
+    - 25 septembre
+    - 16 octobre
+    - 9 novembre
+    - 5 décembre
+    - 25 janvier 2024
+    - 08 février 2024
+    - 13 mars 2024
+    - 19 avril 2024
+    - 11 mai 2024
+    - 6 juin 2024
+    - 15 juillet 2024
+    - 28 août 2024
+    - 14 septembre 2024
+    - 20 octobre 2024
+    - 5 novembre 2024
+    - 23 décembre 2024

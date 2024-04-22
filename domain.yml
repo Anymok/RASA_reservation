@@ -7,6 +7,26 @@ intents:
   - where
   - end
 
+entities:
+  - date
+  - city
+
+
+slots:
+  slot_city:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: city
+
+  slot_date:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: date
+
 responses:
   utter_salutation:
   - text: |
@@ -23,7 +43,7 @@ responses:
   
   utter_end:
   - text: |
-      - Pour résumer, vous voulez un hôtel à (VILLE) pour le (DATE) ?
+      - Pour résumer, vous voulez un hôtel à {slot_city} pour le {slot_date} ?
       
       
 session_config:

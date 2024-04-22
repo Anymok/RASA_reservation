@@ -1,10 +1,13 @@
 version: "3.1"
 
 stories:
-- story: request_booking
+- story: st_salutation
   steps:
   - intent: salutation
   - action: utter_salutation
+
+- story: st_booking
+  steps:
   - intent: booking
   - action: utter_when
   - intent: when

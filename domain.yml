@@ -4,21 +4,32 @@ intents:
   - salutation
   - booking
   - when
-  - where
+  - howmany
+  - name
+  - phone
   - end
 
 entities:
   - date
-  - city
+  - nb_person
+  - customer_name
+  - n_phone
 
 
 slots:
-  slot_city:
+  slot_n_phone:
     type: text
     influence_conversation: false
     mappings:
     - type: from_entity
-      entity: city
+      entity: n_phone
+
+  slot_nb:
+    type: float
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: nb_person
 
   slot_date:
     type: text
@@ -26,6 +37,13 @@ slots:
     mappings:
     - type: from_entity
       entity: date
+
+  slot_name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: customer_name
 
 responses:
   utter_salutation:
@@ -37,13 +55,21 @@ responses:
   - text: |
       - Bien sûr, pour quelle date ?
 
-  utter_where:
+  utter_howmany:
   - text: |
-      - Parfait, pour quelle ville ?
+      - Parfait, pour combien de personne ?
+  
+  utter_name:
+  - text: |
+      - C'est noté, quel nom pour la réservation ?
+  
+  utter_phone:
+  - text: Avez-vous un numéro de téléphone ?
   
   utter_end:
   - text: |
-      - Pour résumer, vous voulez un hôtel à {slot_city} pour le {slot_date} ?
+      - Parfait, vous venez de reserver une table pour {slot_nb} personne(s) au {slot_date}.
+      - La réservation a été faite au nom de {slot_name} et avec le téléphone {slot_n_phone}
       
       
 session_config:

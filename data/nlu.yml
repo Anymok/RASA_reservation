@@ -13,27 +13,324 @@ nlu:
 
 - intent: booking
   examples: |
-    - je veux reserver un hotel
-    - Je veux un hotel
-    - reserver hotel
-    - je veux une chambre
-    - je veux reserver une chambre
-    - je veux reserver
+    - Je voudrais faire une réservation.
+    - Est-ce que je pourrais réserver une table ?
+    - Pouvez-vous me réserver une table ?
+    - J'aimerais réserver une table.
+    - Est-il possible d'avoir une réservation ?
 
 - intent: when
   examples: |
-    - Je voudrai le réserver pour le [28 aout 2024](date)
-    - Mettons-nous d'accord sur le [16 juillet](date)
-    - Le [11 septembre 2024](date) serait idéal pour moi
-    - J'aimerais réserver cette date pour le [11 juin](date)
-    - [9 novembre 2025](date)
+    - J'aimerais organiser ça pour le [22 mars 2025](date) s'il vous plaît.
+    - Serait-il possible de réserver le [3 avril](date) ?
+    - Je préférerais fixer cela pour le [14 février 2026](date).
+    - Est-ce que le [25 mai](date) conviendrait à tout le monde ?
+    - Mettons en place une réunion le [7 décembre 2024](date).
+    - Pouvons-nous programmer cela pour le [18 janvier 2025](date) ?
+    - Le [10 octobre](date) serait-il disponible pour vous ?
+    - J'aimerais bloquer cette date pour le [20 septembre 2025](date) si possible.
+    - Pourrions-nous convenir d'une date le [6 juin 2026](date) ?
+    - Qu'en est-il du [29 juillet](date) pour cette réunion ?
+    - Je propose le [4 novembre 2024](date) comme date de départ.
+    - Le [15 avril 2025](date) semble être un bon choix pour moi.
+    - Est-ce que le [9 août](date) vous convient ?
+    - Réservez-moi le [2 septembre 2024](date), s'il vous plaît.
+    - Pouvez-vous bloquer le [27 décembre 2025](date) dans l'agenda ?
+    - Le [8 janvier 2026](date) est-il une option envisageable ?
+    - Mettons cela en place pour le [12 février](date), si c'est possible.
+    - Pourrions-nous choisir le [21 juin 2025](date) pour cette réunion ?
+    - Est-ce que le [1er mars](date) vous convient ?
+    - Je propose le [19 août 2024](date) comme date alternative.
+    - Organisons cela pour le [10 mai 2025](date), s'il vous plaît.
+    - Je propose le [23 janvier](date) pour notre rendez-vous.
+    - Réservez-moi le [5 septembre 2024](date), si possible.
+    - Fixons cela pour le [18 mars 2026](date).
+    - Le [7 juillet](date) semble être un bon jour pour moi.
+    - Est-ce que le [30 octobre 2025](date) vous convient ?
+    - Je préférerais le [14 décembre](date) pour cette réunion.
+    - Pourrions-nous choisir le [9 avril 2025](date) pour cet événement ?
+    - Bloquons le [26 août](date) dans nos agendas.
+    - Pouvons-nous programmer cela pour le [3 novembre 2024](date) ?
+    - Serait-il possible de réserver le [16 février](date) ?
+    - Je propose le [22 septembre 2025](date) comme date de début.
+    - Est-ce que le [11 janvier 2026](date) est une option ?
+    - Le [8 juin](date) semble être une bonne date.
+    - Fixons cela pour le [19 mai 2024](date).
+    - Pourrions-nous convenir du [2 octobre 2025](date) ?
+    - Organisons cela pour le [15 mars](date).
+    - Le [4 septembre 2024](date) est-il disponible ?
+    - Pouvons-nous choisir le [27 novembre 2025](date) ?
+    - Est-ce que le [20 avril](date) vous convient ?
+    - Le [8 janvier 2025](date) serait parfait.
+    - Réservez-moi le [10 février](date), s'il vous plaît.
+    - Le [15 mars 2025](date) est une bonne option.
+    - Fixons cela pour le [20 avril](date).
+    - Pouvons-nous choisir le [25 mai 2026](date) ?
+    - Je propose le [30 juin](date) pour cette réunion.
+    - Serait-il possible de réserver le [5 juillet 2025](date) ?
+    - Bloquons le [10 août](date) dans nos agendas.
+    - Le [15 septembre 2024](date) vous convient-il ?
+    - Organisons cela pour le [20 octobre](date), si c'est possible.
+    - Pourrions-nous programmer cela pour le [25 novembre 2025](date) ?
+    - Le [30 décembre](date) est-il une option envisageable ?
+    - Réservez le [4 janvier 2026](date) pour moi.
+    - Le [9 février](date) semble être une bonne date.
+    - Pourrions-nous convenir du [15 mars 2024](date) ?
+    - Organisons cela pour le [20 avril 2025](date), s'il vous plaît.
+    - Le [25 mai](date) est-il disponible pour vous ?
+    - Je propose le [30 juin 2026](date) comme date de départ.
+    - Le [5 juillet](date) semble être un bon jour pour moi.
+    - Fixons cela pour le [10 août 2025](date).
+    - [10 janvier 2025](date)
+    - [15 février](date)
+    - [20 mars 2025](date)
+    - [25 avril](date)
+    - [30 mai 2026](date)
+    - [5 juin](date)
+    - [10 juillet 2025](date)
+    - [15 août](date)
+    - [20 septembre 2024](date)
+    - [25 octobre](date)
+    - [30 novembre 2025](date)
+    - [5 décembre](date)
+    - [10 janvier 2026](date)
+    - [15 février 2024](date)
+    - [20 mars](date)
+    - [25 avril 2025](date)
+    - [30 mai](date)
+    - [5 juin 2026](date)
+    - [10 juillet](date)
+    - Le [10 janvier 2025](date)
+    - Le [15 février](date)
+    - Le [20 mars 2025](date)
+    - Le [25 avril](date)
+    - Le [30 mai 2026](date)
+    - Le [5 juin](date)
+    - Le [10 juillet 2025](date)
+    - Le [15 août](date)
+    - Le [20 septembre 2024](date)
+    - Le [25 octobre](date)
+    - Le [30 novembre 2025](date)
+    - Le [5 décembre](date)
+    - Le [10 janvier 2026](date)
+    - Le [15 février 2024](date)
+    - Le [20 mars](date)
+    - Le [25 avril 2025](date)
+    - Le [30 mai](date)
+    - Le [5 juin 2026](date)
+    - Le [10 juillet](date)
+    - Pour le [12 janvier 2025](date)
+    - Pour le [17 février](date)
+    - Pour le [22 mars 2025](date)
+    - Pour le [27 avril](date)
+    - Pour le [2 juin 2026](date)
+    - Pour le [7 juillet](date)
+    - Pour le [12 août 2025](date)
+    - Pour le [17 septembre](date)
+    - Pour le [22 octobre 2024](date)
+    - Pour le [27 novembre](date)
+    - Pour le [2 décembre 2025](date)
+    - Pour le [7 janvier 2026](date)
+    - Pour le [12 février 2024](date)
+    - Pour le [17 mars](date)
+    - Pour le [22 avril 2025](date)
+    - Pour le [27 mai](date)
+    - Pour le [2 juin 2026](date)
+    - Pour le [7 juillet](date)
+    - Pour le [12 août](date)
 
-- intent: where
+- intent: howmany
   examples: |
-    - Je voudrai venir à [Nantes](city)
-    - Pour [Paris](city)
-    - J'aimerais me rendre à [Le Havre](city)
-    - [Dieppe](city)
+    - Je voudrais faire une réservation pour [1](nb_person) personne.
+    - Est-ce que je pourrais réserver une table pour [15](nb_person) convives ?
+    - Pouvez-vous me réserver une table pour [5](nb_person) personnes s'il vous plaît ?
+    - J'aimerais réserver une table pour [8](nb_person) convives.
+    - Est-il possible d'avoir une réservation pour [16](nb_person) personnes ?
+    - [2](nb_person) personnes suffiront.
+    - [1](nb_person) personne, s'il vous plaît.
+    - Nous serons [10](nb_person) personnes.
+    - Y a-t-il de la place pour [4](nb_person) personnes ?
+    - Nous avons besoin d'une table pour [6](nb_person) personnes.
+    - Je viendrai avec [3](nb_person) amis.
+    - [7](nb_person) personnes, merci.
+    - Réservez pour [12](nb_person) personnes.
+    - Nous serons [20](nb_person) personnes au total.
+    - [9](nb_person) personnes pour la réservation.
+    - Je prévois une table pour [25](nb_person) personnes.
+    - [30](nb_person) personnes pour la soirée.
+    - Nous aurons [40](nb_person) personnes à table.
+    - pour [1](nb_person) personne.
+    - pour [2](nb_person) personnes.
+    - pour [3](nb_person) personnes.
+    - pour [4](nb_person) personnes.
+    - pour [5](nb_person) personnes.
+    - pour [6](nb_person) personnes.
+    - pour [7](nb_person) personnes.
+    - pour [8](nb_person) personnes.
+    - pour [9](nb_person) personnes.
+    - pour [10](nb_person) personnes.
+    - pour [15](nb_person) personnes.
+    - pour [20](nb_person) personnes.
+    - pour [25](nb_person) personnes.
+    - pour [30](nb_person) personnes.
+    - pour [35](nb_person) personnes.
+    - pour [40](nb_person) personnes.
+    - pour [45](nb_person) personnes.
+    - pour [50](nb_person) personnes.
+    - pour [55](nb_person) personnes.
+    - pour [60](nb_person) personnes.
+    - [1](nb_person) personne.
+    - [2](nb_person) personnes.
+    - [3](nb_person) personnes.
+    - [4](nb_person) personnes.
+    - [5](nb_person) personnes.
+    - [6](nb_person) personnes.
+    - [7](nb_person) personnes.
+    - [8](nb_person) personnes.
+    - [9](nb_person) personnes.
+    - [10](nb_person) personnes.
+    - [15](nb_person) personnes.
+    - [20](nb_person) personnes.
+    - [25](nb_person) personnes.
+    - [30](nb_person) personnes.
+    - [35](nb_person) personnes.
+    - [40](nb_person) personnes.
+    - [45](nb_person) personnes.
+    - [50](nb_person) personnes.
+    - [55](nb_person) personnes.
+    - [60](nb_person) personnes.
+    - [1](nb_person)
+    - [2](nb_person)
+    - [3](nb_person)
+    - [4](nb_person)
+    - [5](nb_person)
+    - [6](nb_person)
+    - [7](nb_person)
+    - [8](nb_person)
+    - [9](nb_person)
+    - [10](nb_person)
+    - [15](nb_person)
+    - [20](nb_person)
+    - [25](nb_person)
+    - [30](nb_person)
+    - [35](nb_person)
+    - [40](nb_person)
+    - [45](nb_person)
+    - [50](nb_person)
+    - [55](nb_person)
+    - [60](nb_person)
+    - [65](nb_person)
+    - [70](nb_person)
+    - [75](nb_person)
+    - [80](nb_person)
+    - [85](nb_person)
+    - [90](nb_person)
+    - [95](nb_person)
+    - [99](nb_person)
+
+- intent: name
+  examples: |
+    - La réservation sera au nom de [Heude](customer_name).
+    - Le nom pour la réservation est [Turpin](customer_name).
+    - Vous pouvez mettre la réservation au nom de [DUVAL](customer_name).
+    - Pour la réservation, le nom est [MARTIN](customer_name).
+    - Le nom à inscrire sur la réservation est [DUBOIS](customer_name).
+    - La réservation est pour [Lefebvre](customer_name).
+    - Le nom de famille pour la réservation est [Leclerc](customer_name).
+    - Mettez la réservation au nom de [Garcia](customer_name).
+    - La réservation sera sous le nom de [Rodriguez](customer_name).
+    - Le nom à noter pour la réservation est [Lopez](customer_name).
+    - Pour la réservation, inscrivez le nom [Sanchez](customer_name).
+    - La réservation est pour [Ramirez](customer_name).
+    - Le nom de famille à mettre sur la réservation est [Perez](customer_name).
+    - Inscrivez la réservation au nom de [Gonzalez](customer_name).
+    - Pour la réservation, le nom sera [Martinez](customer_name).
+    - La réservation est pour [Hernandez](customer_name).
+    - Le nom à inscrire sur la réservation est [Gomez](customer_name).
+    - La réservation sera au nom de [Diaz](customer_name).
+    - Mettez la réservation au nom de [Alvarez](customer_name).
+    - pour [Martin](customer_name)
+    - pour [Dupont](customer_name)
+    - pour [Garcia](customer_name)
+    - pour [Lefevre](customer_name)
+    - pour [Dubois](customer_name)
+    - pour [Lopez](customer_name)
+    - pour [Perez](customer_name)
+    - pour [Sanchez](customer_name)
+    - pour [Rodriguez](customer_name)
+    - pour [Gomez](customer_name)
+    - pour [Martinez](customer_name)
+    - pour [Hernandez](customer_name)
+    - pour [Alvarez](customer_name)
+    - pour [Ramirez](customer_name)
+    - pour [Gonzalez](customer_name)
+    - pour [Diaz](customer_name)
+    - pour [Torres](customer_name)
+    - pour [Ruiz](customer_name)
+    - pour [Moreno](customer_name)
+    - [Smith](customer_name)
+    - [Johnson](customer_name)
+    - [Williams](customer_name)
+    - [Jones](customer_name)
+    - [Brown](customer_name)
+    - [Davis](customer_name)
+    - [Miller](customer_name)
+    - [Wilson](customer_name)
+    - [Moore](customer_name)
+    - [Taylor](customer_name)
+    - [Anderson](customer_name)
+    - [Thomas](customer_name)
+    - [Jackson](customer_name)
+    - [White](customer_name)
+    - [Harris](customer_name)
+    - [Martin](customer_name)
+    - [Thompson](customer_name)
+    - [Garcia](customer_name)
+    - [Martinez](customer_name)
+    - [Robinson](customer_name)
+
+- intent: phone
+  examples: |
+    - Mon numéro de téléphone est [0712345678](n_phone).
+    - Vous pouvez me joindre au [07 12 34 56 78](n_phone).
+    - Oui, voici mon numéro de téléphone : [+33712345678](n_phone).
+    - Mon numéro de téléphone est [07.12.34.56.78](n_phone).
+    - Vous pouvez me contacter au [+33(0)712345678](n_phone).
+    - Oui, mon numéro est le [07-12-34-56-78](n_phone).
+    - Voici mon numéro : [07.12.34.56.78](n_phone).
+    - Mon numéro de téléphone : [+33 7.12.34.56.78](n_phone).
+    - Vous pouvez me joindre au [07 12.34.56.78](n_phone).
+    - Oui, mon numéro est [+33712345678](n_phone).
+    - Voici mon numéro de téléphone : [07-12-34-56-78](n_phone).
+    - Mon numéro est le [+33 712345678](n_phone).
+    - Oui, mon numéro est [07.12.34.56.78](n_phone).
+    - Mon numéro de téléphone est : [+33 (0)7 12 34 56 78](n_phone).
+    - Vous pouvez me contacter au [07.12.34.56.78](n_phone).
+    - Oui, voici mon numéro : [+337.12.34.56.78](n_phone).
+    - Mon numéro de téléphone : [07-12-34-56-78](n_phone).
+    - Mon numéro est le [+33 7 12 34 56 78](n_phone).
+    - Oui, mon numéro est [07 12.34.56.78](n_phone).
+    - Voici mon numéro : [+33 7.12.34.56.78](n_phone).
+    - [0712345678](n_phone)
+    - [07 12 34 56 78](n_phone)
+    - [+33712345678](n_phone)
+    - [07.12.34.56.78](n_phone)
+    - [+33(0)712345678](n_phone)
+    - [07-12-34-56-78](n_phone)
+    - [07.12.34.56.78](n_phone)
+    - [+33 7.12.34.56.78](n_phone)
+    - [07 12.34.56.78](n_phone)
+    - [+33712345678](n_phone)
+    - [07-12-34-56-78](n_phone)
+    - [+33 712345678](n_phone)
+    - [07.12.34.56.78](n_phone)
+    - [+33 (0)7 12 34 56 78](n_phone)
+    - [07.12.34.56.78](n_phone)
+    - [+337.12.34.56.78](n_phone)
+    - [07-12-34-56-78](n_phone)
+    - [+33 7 12 34 56 78](n_phone)
+    - [07 12.34.56.78](n_phone)
+    - [+33 7.12.34.56.78](n_phone)
 
 - intent: end
   examples: |
@@ -41,276 +338,27 @@ nlu:
     - Exactement
     - C'est ça
 
-- lookup: city
+- regex: date
   examples: |
-    - Paris
-    - Marseille
-    - Lyon
-    - Toulouse
-    - Nice
-    - Nantes
-    - Strasbourg
-    - Montpellier
-    - Bordeaux
-    - Lille
-    - Rennes
-    - Reims
-    - Le Havre
-    - Saint-Étienne
-    - Toulon
-    - Grenoble
-    - Dijon
-    - Angers
-    - Nîmes
-    - Villeurbanne
-    - Saint-Denis
-    - Le Mans
-    - Aix-en-Provence
-    - Clermont-Ferrand
-    - Brest
-    - Limoges
-    - Tours
-    - Amiens
-    - Perpignan
-    - Metz
-    - Besançon
-    - Boulogne-Billancourt
-    - Orléans
-    - Saint-Denis
-    - Argenteuil
-    - Rouen
-    - Montreuil
-    - Mulhouse
-    - Caen
-    - Saint-Paul
-    - Nancy
-    - Tourcoing
-    - Roubaix
-    - Nanterre
-    - Vitry-sur-Seine
-    - Avignon
-    - Créteil
-    - Dunkerque
-    - Poitiers
-    - Asnières-sur-Seine
-    - Courbevoie
-    - Versailles
-    - Colombes
-    - Fort-de-France
-    - Aulnay-sous-Bois
-    - Saint-Pierre
-    - Rueil-Malmaison
-    - Pau
-    - Aubervilliers
-    - Le Tampon
-    - Antibes
-    - La Rochelle
-    - Champigny-sur-Marne
-    - Saint-Maur-des-Fossés
-    - Calais
-    - Issy-les-Moulineaux
-    - La Seyne-sur-Mer
-    - Noisy-le-Grand
-    - Sarcelles
-    - Levallois-Perret
-    - Ajaccio
-    - Vénissieux
-    - Cergy
-    - Saint-Quentin
-    - Béziers
-    - Pessac
-    - La Roche-sur-Yon
-    - Cholet
-    - Charleville-Mézières
-    - Saint-Nazaire
-    - Chambéry
-    - Beauvais
-    - Grasse
-    - Tarbes
-    - Vannes
-    - Lorient
-    - Évreux
-    - Marcq-en-Barœul
-    - Villeneuve-d'Ascq
-    - Bastia
-    - Niort
-    - Cambrai
-    - Colmar
-    - Pontault-Combault
-    - Vincennes
-    - Sète
-    - Albi
-    - Sartrouville
-    - Livry-Gargan
-    - Maisons-Alfort
-    - Ivry-sur-Seine
-    - Chalon-sur-Saône
-    - Meaux
-    - Saint-Germain-en-Laye
-    - Gagny
-    - Saint-Laurent-du-Maroni
-    - Bagneux
-    - Montrouge
-    - Saint-Cloud
-    - Chelles
-    - Compiègne
-    - Bondy
-    - Clamart
-    - Clichy
-    - Troyes
-    - Nevers
-    - Les Abymes
-    - Le Blanc-Mesnil
-    - Noisy-le-Sec
-    - Vaulx-en-Velin
-    - Sartrouville
-    - Échirolles
-    - Meudon
-    - Saint-Benoît
-    - Vienne
-    - Rosny-sous-Bois
-    - L'Haÿ-les-Roses
-    - Épinal
-    - Alfortville
-    - Savigny-sur-Orge
-    - Saint-Ouen
-    - Bastia
-    - Sevran
-    - Sainte-Marie
-    - Gap
-    - Bagnolet
-    - Saint-Leu
-    - Châlons-en-Champagne
-    - Saint-Priest
-    - Wattrelos
-    - Lens
-    - Conflans-Sainte-Honorine
-    - Montluçon
-    - La Courneuve
-    - Saint-Martin-d'Hères
-    - Palaiseau
-    - Auxerre
-    - Le Perreux-sur-Marne
-    - Cormeilles-en-Parisis
-    - Neuilly-sur-Marne
-    - Villejuif
-    - Savigny-le-Temple
-    - Saint-Raphaël
-    - Massy
-    - Le Cannet
-    - Liévin
-    - Houilles
-    - Hyères
-    - Garges-lès-Gonesse
-    - La Ciotat
-    - Épinal
-    - Le Plessis-Robinson
-    - Le Kremlin-Bicêtre
-    - Villefranche-sur-Saône
-    - Châtillon
-    - Saint-Chamond
-    - Villepinte
-    - Sarreguemines
-    - Savigny-sur-Orge
-    - Montereau-Fault-Yonne
-    - Stains
-    - Fontenay-sous-Bois
-    - Talence
-    - Concarneau
-    - Yerres
-    - Le Lamentin
-    - Puteaux
-    - Villiers-sur-Marne
-    - Trappes
-    - Thonon-les-Bains
-    - La Garenne-Colombes
-    - Six-Fours-les-Plages
-    - Cachan
-    - Les Mureaux
-    - Maubeuge
-    - Châtenay-Malabry
-    - Villeurbanne
-    - Chatou
-    - L'Haÿ-les-Roses
-    - Sannois
-    - La Possession
-    - Savigny-le-Temple
-    - Le Mée-sur-Seine
-    - Le Chesnay-Rocquencourt
-    - Drancy
-    - Schiltigheim
-    - Sainte-Geneviève-des-Bois
-    - Vandœuvre-lès-Nancy
-    - Roanne
-    - Saint-Étienne-du-Rouvray
-    - Belfort
-    - Périgueux
-    - Gennevilliers
-    - Saint-Médard-en-Jalles
-    - Agen
-    - Rezé
-    - Goussainville
-    - Ris-Orangis
-    - Saint-Malo
-    - Annemasse
-    - Villenave-d'Ornon
-    - Montigny-le-Bretonneux
-    - Villemomble
-    - Sainte-Marie
-    - Gif-sur-Yvette
-    - Cagnes-sur-Mer
-    - Saint-Martin-d'Hères
-    - Choisy-le-Roi
-    - Anglet
-    - Romainville
-    - Vandœuvre-lès-Nancy
-    - Schiltigheim
-    - Saint-Étienne-du-Rouvray
-    - Belfort
-    - Périgueux
-    - Gennevilliers
-    - Saint-Médard-en-Jalles
-    - Agen
-    - Rezé
-    - Goussainville
-    - Ris-Orangis
-    - Saint-Malo
-    - Annemasse
-    - Villenave-d'Ornon
-    - Montigny-le-Bretonneux
-    - Villemomble
-    - Sainte-Marie
-    - Gif-sur-Yvette
-    - Cagnes-sur-Mer
-    - Saint-Martin-d'Hères
-    - Choisy-le-Roi
-    - Anglet
-    - Romainville
+    - (?:0[1-9]|[12][0-9]|3[01])\s(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)
+    - (?:0[1-9]|[12][0-9]|3[01])\s(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)\s\d{4}
+    - \d{1,2}/\d{1,2}/\d{4}
+    - \d{1,2}/\d{1,2}
 
-
-- lookup: date
+- regex: nb_person
   examples: |
-    - 9 janvier
-    - 15 février
-    - 3 mars
-    - 22 avril
-    - 18 mai
-    - 11 juin
-    - 7 juillet
-    - 30 août
-    - 25 septembre
-    - 16 octobre
-    - 9 novembre
-    - 5 décembre
-    - 25 janvier 2024
-    - 08 février 2024
-    - 13 mars 2024
-    - 19 avril 2024
-    - 11 mai 2024
-    - 6 juin 2024
-    - 15 juillet 2024
-    - 28 août 2024
-    - 14 septembre 2024
-    - 20 octobre 2024
-    - 5 novembre 2024
-    - 23 décembre 2024
+    - ^[1-9]$
+    - (?:[1-9][0-9]|[1-9])
+
+- regex: customer_name
+  examples: |
+    - [A-Za-z]+
+    - [A-Za-z-' ]+
+    - [A-Z]+
+    - [a-z]+
+
+- regex: n_phone
+  examples: |
+    - (?:\+33|0)[1-9](?:\d{2}){4}
+    - (?:\+33|0)[1-9]\d{8}
+    - (?:\+33|0)[1-9]\d{2}\.\d{2}\.\d{2}\.\d{2}

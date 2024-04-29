@@ -1,1 +1,35 @@
 version: "3.1"
+
+rules:
+
+- rule: availableaffirm
+  condition:
+  - slot_was_set:
+    - available: true
+  steps:
+    - intent: confirm
+    - action: utter_confirm_booking
+
+- rule: availablecancel
+  condition:
+  - slot_was_set:
+    - available: true
+  steps:
+    - intent: cancel
+    - action: utter_cancel_booking
+
+- rule: notavailableaffirm
+  condition:
+  - slot_was_set:
+    - available: false
+  steps:
+    - intent: confirm
+    - action: utter_confirm_booking
+
+- rule: notavailablecancel
+  condition:
+  - slot_was_set:
+    - available: false
+  steps:
+    - intent: cancel
+    - action: utter_cancel_booking

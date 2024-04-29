@@ -21,212 +21,18 @@ nlu:
 
 - intent: when
   examples: |
-    - J'aimerais organiser ça pour le [22 mars 2025](date) s'il vous plaît.
-    - Serait-il possible de réserver le [3 avril](date) ?
-    - Je préférerais fixer cela pour le [14 février 2026](date).
-    - Est-ce que le [25 mai](date) conviendrait à tout le monde ?
-    - Mettons en place une réunion le [7 décembre 2024](date).
-    - Pouvons-nous programmer cela pour le [18 janvier 2025](date) ?
-    - Le [10 octobre](date) serait-il disponible pour vous ?
-    - J'aimerais bloquer cette date pour le [20 septembre 2025](date) si possible.
-    - Pourrions-nous convenir d'une date le [6 juin 2026](date) ?
-    - Qu'en est-il du [29 juillet](date) pour cette réunion ?
-    - Je propose le [4 novembre 2024](date) comme date de départ.
-    - Le [15 avril 2025](date) semble être un bon choix pour moi.
-    - Est-ce que le [9 août](date) vous convient ?
-    - Réservez-moi le [2 septembre 2024](date), s'il vous plaît.
-    - Pouvez-vous bloquer le [27 décembre 2025](date) dans l'agenda ?
-    - Le [8 janvier 2026](date) est-il une option envisageable ?
-    - Mettons cela en place pour le [12 février](date), si c'est possible.
-    - Pourrions-nous choisir le [21 juin 2025](date) pour cette réunion ?
-    - Est-ce que le [1er mars](date) vous convient ?
-    - Je propose le [19 août 2024](date) comme date alternative.
-    - Organisons cela pour le [10 mai 2025](date), s'il vous plaît.
-    - Je propose le [23 janvier](date) pour notre rendez-vous.
-    - Réservez-moi le [5 septembre 2024](date), si possible.
-    - Fixons cela pour le [18 mars 2026](date).
-    - Le [7 juillet](date) semble être un bon jour pour moi.
-    - Est-ce que le [30 octobre 2025](date) vous convient ?
-    - Je préférerais le [14 décembre](date) pour cette réunion.
-    - Pourrions-nous choisir le [9 avril 2025](date) pour cet événement ?
-    - Bloquons le [26 août](date) dans nos agendas.
-    - Pouvons-nous programmer cela pour le [3 novembre 2024](date) ?
-    - Serait-il possible de réserver le [16 février](date) ?
-    - Je propose le [22 septembre 2025](date) comme date de début.
-    - Est-ce que le [11 janvier 2026](date) est une option ?
-    - Le [8 juin](date) semble être une bonne date.
-    - Fixons cela pour le [19 mai 2024](date).
-    - Pourrions-nous convenir du [2 octobre 2025](date) ?
-    - Organisons cela pour le [15 mars](date).
-    - Le [4 septembre 2024](date) est-il disponible ?
-    - Pouvons-nous choisir le [27 novembre 2025](date) ?
-    - Est-ce que le [20 avril](date) vous convient ?
-    - Le [8 janvier 2025](date) serait parfait.
-    - Réservez-moi le [10 février](date), s'il vous plaît.
-    - Le [15 mars 2025](date) est une bonne option.
-    - Fixons cela pour le [20 avril](date).
-    - Pouvons-nous choisir le [25 mai 2026](date) ?
-    - Je propose le [30 juin](date) pour cette réunion.
-    - Serait-il possible de réserver le [5 juillet 2025](date) ?
-    - Bloquons le [10 août](date) dans nos agendas.
-    - Le [15 septembre 2024](date) vous convient-il ?
-    - Organisons cela pour le [20 octobre](date), si c'est possible.
-    - Pourrions-nous programmer cela pour le [25 novembre 2025](date) ?
-    - Le [30 décembre](date) est-il une option envisageable ?
-    - Réservez le [4 janvier 2026](date) pour moi.
-    - Le [9 février](date) semble être une bonne date.
-    - Pourrions-nous convenir du [15 mars 2024](date) ?
-    - Organisons cela pour le [20 avril 2025](date), s'il vous plaît.
-    - Le [25 mai](date) est-il disponible pour vous ?
-    - Je propose le [30 juin 2026](date) comme date de départ.
-    - Le [5 juillet](date) semble être un bon jour pour moi.
-    - Fixons cela pour le [10 août 2025](date).
-    - [10 janvier 2025](date)
-    - [15 février](date)
-    - [20 mars 2025](date)
-    - [25 avril](date)
-    - [30 mai 2026](date)
-    - [5 juin](date)
-    - [10 juillet 2025](date)
-    - [15 août](date)
-    - [20 septembre 2024](date)
-    - [25 octobre](date)
-    - [30 novembre 2025](date)
-    - [5 décembre](date)
-    - [10 janvier 2026](date)
-    - [15 février 2024](date)
-    - [20 mars](date)
-    - [25 avril 2025](date)
-    - [30 mai](date)
-    - [5 juin 2026](date)
-    - [10 juillet](date)
-    - Le [10 janvier 2025](date)
-    - Le [15 février](date)
-    - Le [20 mars 2025](date)
-    - Le [25 avril](date)
-    - Le [30 mai 2026](date)
-    - Le [5 juin](date)
-    - Le [10 juillet 2025](date)
-    - Le [15 août](date)
-    - Le [20 septembre 2024](date)
-    - Le [25 octobre](date)
-    - Le [30 novembre 2025](date)
-    - Le [5 décembre](date)
-    - Le [10 janvier 2026](date)
-    - Le [15 février 2024](date)
-    - Le [20 mars](date)
-    - Le [25 avril 2025](date)
-    - Le [30 mai](date)
-    - Le [5 juin 2026](date)
-    - Le [10 juillet](date)
-    - Pour le [12 janvier 2025](date)
-    - Pour le [17 février](date)
-    - Pour le [22 mars 2025](date)
-    - Pour le [27 avril](date)
-    - Pour le [2 juin 2026](date)
-    - Pour le [7 juillet](date)
-    - Pour le [12 août 2025](date)
-    - Pour le [17 septembre](date)
-    - Pour le [22 octobre 2024](date)
-    - Pour le [27 novembre](date)
-    - Pour le [2 décembre 2025](date)
-    - Pour le [7 janvier 2026](date)
-    - Pour le [12 février 2024](date)
-    - Pour le [17 mars](date)
-    - Pour le [22 avril 2025](date)
-    - Pour le [27 mai](date)
-    - Pour le [2 juin 2026](date)
-    - Pour le [7 juillet](date)
-    - Pour le [12 août](date)
+    - [14/04/2024](date)
+    - [07/04/24](date)
+
 
 - intent: howmany
   examples: |
-    - Je voudrais faire une réservation pour [1](nb_person) personne.
-    - Est-ce que je pourrais réserver une table pour [15](nb_person) convives ?
-    - Pouvez-vous me réserver une table pour [5](nb_person) personnes s'il vous plaît ?
-    - J'aimerais réserver une table pour [8](nb_person) convives.
-    - Est-il possible d'avoir une réservation pour [16](nb_person) personnes ?
-    - [2](nb_person) personnes suffiront.
-    - [1](nb_person) personne, s'il vous plaît.
-    - Nous serons [10](nb_person) personnes.
-    - Y a-t-il de la place pour [4](nb_person) personnes ?
-    - Nous avons besoin d'une table pour [6](nb_person) personnes.
-    - Je viendrai avec [3](nb_person) amis.
-    - [7](nb_person) personnes, merci.
-    - Réservez pour [12](nb_person) personnes.
-    - Nous serons [20](nb_person) personnes au total.
-    - [9](nb_person) personnes pour la réservation.
-    - Je prévois une table pour [25](nb_person) personnes.
-    - [30](nb_person) personnes pour la soirée.
-    - Nous aurons [40](nb_person) personnes à table.
-    - pour [1](nb_person) personne.
-    - pour [2](nb_person) personnes.
-    - pour [3](nb_person) personnes.
-    - pour [4](nb_person) personnes.
     - pour [5](nb_person) personnes.
-    - pour [6](nb_person) personnes.
-    - pour [7](nb_person) personnes.
-    - pour [8](nb_person) personnes.
-    - pour [9](nb_person) personnes.
-    - pour [10](nb_person) personnes.
-    - pour [15](nb_person) personnes.
-    - pour [20](nb_person) personnes.
-    - pour [25](nb_person) personnes.
-    - pour [30](nb_person) personnes.
-    - pour [35](nb_person) personnes.
-    - pour [40](nb_person) personnes.
-    - pour [45](nb_person) personnes.
-    - pour [50](nb_person) personnes.
-    - pour [55](nb_person) personnes.
     - pour [60](nb_person) personnes.
-    - [1](nb_person) personne.
     - [2](nb_person) personnes.
-    - [3](nb_person) personnes.
-    - [4](nb_person) personnes.
-    - [5](nb_person) personnes.
-    - [6](nb_person) personnes.
-    - [7](nb_person) personnes.
-    - [8](nb_person) personnes.
-    - [9](nb_person) personnes.
-    - [10](nb_person) personnes.
-    - [15](nb_person) personnes.
-    - [20](nb_person) personnes.
-    - [25](nb_person) personnes.
-    - [30](nb_person) personnes.
-    - [35](nb_person) personnes.
-    - [40](nb_person) personnes.
-    - [45](nb_person) personnes.
-    - [50](nb_person) personnes.
-    - [55](nb_person) personnes.
     - [60](nb_person) personnes.
-    - [1](nb_person)
-    - [2](nb_person)
-    - [3](nb_person)
-    - [4](nb_person)
-    - [5](nb_person)
-    - [6](nb_person)
     - [7](nb_person)
-    - [8](nb_person)
-    - [9](nb_person)
-    - [10](nb_person)
-    - [15](nb_person)
-    - [20](nb_person)
-    - [25](nb_person)
-    - [30](nb_person)
-    - [35](nb_person)
-    - [40](nb_person)
-    - [45](nb_person)
-    - [50](nb_person)
     - [55](nb_person)
-    - [60](nb_person)
-    - [65](nb_person)
-    - [70](nb_person)
-    - [75](nb_person)
-    - [80](nb_person)
-    - [85](nb_person)
-    - [90](nb_person)
-    - [95](nb_person)
-    - [99](nb_person)
 
 - intent: name
   examples: |
@@ -332,23 +138,25 @@ nlu:
     - [07 12.34.56.78](n_phone)
     - [+33 7.12.34.56.78](n_phone)
 
-- intent: end
+- intent: confirm
   examples: |
     - Oui
     - Exactement
     - C'est ça
 
+- intent: cancel
+  examples: |
+    - Non
+    - annuler
+    - faux
+
 - regex: date
   examples: |
-    - (?:0[1-9]|[12][0-9]|3[01])\s(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)
-    - (?:0[1-9]|[12][0-9]|3[01])\s(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)\s\d{4}
-    - \d{1,2}/\d{1,2}/\d{4}
-    - \d{1,2}/\d{1,2}
+    - \d{1,2}\/\d{1,2}\/\d{2,4}
 
 - regex: nb_person
   examples: |
-    - ^[1-9]$
-    - (?:[1-9][0-9]|[1-9])
+    - \d+
 
 - regex: customer_name
   examples: |

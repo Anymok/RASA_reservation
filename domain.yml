@@ -7,7 +7,11 @@ intents:
   - howmany
   - name
   - phone
-  - end
+  - confirm
+  - cancel
+
+actions:
+  - action_check_enough_space
 
 entities:
   - date
@@ -17,6 +21,12 @@ entities:
 
 
 slots:
+  available:
+    type: bool
+    influence_conversation: true
+    mappings:
+    - type: custom
+
   slot_n_phone:
     type: text
     influence_conversation: false
@@ -65,6 +75,12 @@ responses:
   
   utter_phone:
   - text: Avez-vous un numéro de téléphone ?
+
+  utter_confirm_booking:
+  - text: confirm
+  
+  utter_cancel_booking:
+  - text: cancel
   
   utter_end:
   - text: |

@@ -1,20 +1,27 @@
 version: "3.1"
 
 stories:
-- story: st_salutation # Salutation
-  steps:
-  - intent: salutation
-  - action: utter_salutation
+  - story: st_salutation # Salutation
+    steps:
+    - intent: salutation
+    - action: utter_salutation
 
-- story: st_booking # Réserver une table
-  steps:
-  - intent: booking
-  - action: utter_when # Date
-  - intent: when
-  - action: utter_howmany # NB personne
-  - intent: howmany
-  - action: utter_name # Nom reservation
-  - intent: name
-  - action: utter_phone #- N tel
-  - intent: phone
-  - action: utter_end
+  - story: st_booking # Réserver une table
+    steps:
+    - intent: booking
+    - action: utter_when # Date
+    - intent: when
+      entities: 
+      - entity_name: date
+    - action: utter_howmany # NB personne
+    - intent: howmany
+      entities: 
+      - entity_name: nb_person
+    - action: action_check_enough_space
+    # - slot_was_set:
+    #   - available: true
+    # - action: utter_confirm_booking # Nom reservation
+    # - intent: salutation
+    # - action: utter_phone #- N tel
+    # - intent: phone
+    # - action: utter_end

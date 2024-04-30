@@ -1,1 +1,38 @@
 version: "3.1"
+
+rules:
+
+- rule: availableaffirm
+  condition:
+  - slot_was_set:
+    - available: true
+  steps:
+    - intent: confirm
+    - action: utter_name
+
+- rule: availablecancel
+  condition:
+  - slot_was_set:
+    - available: true
+  steps:
+    - intent: cancel
+
+- rule: notavailableaffirm
+  condition:
+  - slot_was_set:
+    - available: false
+  steps:
+    - intent: confirm
+    # Boucle retourne vers date
+
+- rule: notavailablecancel
+  condition:
+  - slot_was_set:
+    - available: false
+  steps:
+    - intent: cancel
+
+- rule: bye
+  steps:
+    - intent: bye
+    - action: utter_bye

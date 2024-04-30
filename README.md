@@ -24,3 +24,25 @@
 
 # TODO
  - requirement.txt
+
+ Faire fonctionner un bot qui prend une réservation pour un restaurant :
+
+    - Réserver une table
+    - Annuler une réservation
+    - Afficher information réservation et modifier commentaire
+    - Obtenir la liste des allergènes
+    - Obtenir le menu du jour
+    - Obtenir le liens vers le menu complet
+
+
+    - Date de réservation, Nombre de personnes, Nom de réservation, Numéro de téléphone
+    - Ajouter un commentaire à la réservation
+
+
+    - Vérifier si disponible
+    - Obtenir un numéro de réservation
+    
+  
+
+    - Intégrer le bot sur une plateforme
+    - Fournir l’ensemble des fichiers sur un git(hub/lab/autre), bonus si usage d’image docker ! 

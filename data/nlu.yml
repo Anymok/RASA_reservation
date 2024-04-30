@@ -13,304 +13,195 @@ nlu:
 
 - intent: booking
   examples: |
-    - je veux reserver un hotel
-    - Je veux un hotel
-    - reserver hotel
-    - je veux une chambre
-    - je veux reserver une chambre
-    - je veux reserver
+    - Nouvelle réservation
+    - Je voudrais faire une réservation.
+    - Est-ce que je pourrais réserver une table ?
+    - Pouvez-vous me réserver une table ?
+    - J'aimerais réserver une table.
+    - Est-il possible d'avoir une réservation ?
+
+- intent: cancel_booking
+  examples: |
+    - Annuler une réservation
+    - Annuler
+
+- intent: info_booking
+  examples: |
+    - Info sur une réservation
+    - Info
+
+- intent: menu_of_the_day
+  examples: |
+    - Menu du jour
+    - Plat du jour
+
+- intent: allergens
+  examples: |
+    - Liste des allergènes
+    - allergènes
+
+- intent: menu
+  examples: |
+    - Lien vers la carte
+    - carte
+
+- intent: bye
+  examples: |
+    - Au revoir
+    - a bientot
+    - bonne soirée
+    - adieu
 
 - intent: when
   examples: |
-    - Je voudrai le réserver pour le [28 aout 2024](date)
-    - Mettons-nous d'accord sur le [16 juillet](date)
-    - Le [11 septembre 2024](date) serait idéal pour moi
-    - J'aimerais réserver cette date pour le [11 juin](date)
-    - [9 novembre 2025](date)
+    - [14/04/2024](date)
+    - [07/04/24](date)
 
-- intent: where
+
+- intent: howmany
   examples: |
-    - Je voudrai venir à [Nantes](city)
-    - Pour [Paris](city)
-    - J'aimerais me rendre à [Le Havre](city)
-    - [Dieppe](city)
+    - pour [5]{"entity": "nb_person"} personnes.
+    - pour [60]{"entity": "nb_person"} personnes.
+    - [2]{"entity": "nb_person"} personnes.
+    - [60]{"entity": "nb_person"} personnes.
+    - [7]{"entity": "nb_person"}
+    - [55]{"entity": "nb_person"}
 
-- intent: end
+- intent: name
+  examples: |
+    - La réservation sera au nom de [Heude](customer_name).
+    - Le nom pour la réservation est [Turpin](customer_name).
+    - Vous pouvez mettre la réservation au nom de [DUVAL](customer_name).
+    - Pour la réservation, le nom est [MARTIN](customer_name).
+    - Le nom à inscrire sur la réservation est [DUBOIS](customer_name).
+    - La réservation est pour [Lefebvre](customer_name).
+    - Le nom de famille pour la réservation est [Leclerc](customer_name).
+    - Mettez la réservation au nom de [Garcia](customer_name).
+    - La réservation sera sous le nom de [Rodriguez](customer_name).
+    - Le nom à noter pour la réservation est [Lopez](customer_name).
+    - Pour la réservation, inscrivez le nom [Sanchez](customer_name).
+    - La réservation est pour [Ramirez](customer_name).
+    - Le nom de famille à mettre sur la réservation est [Perez](customer_name).
+    - Inscrivez la réservation au nom de [Gonzalez](customer_name).
+    - Pour la réservation, le nom sera [Martinez](customer_name).
+    - La réservation est pour [Hernandez](customer_name).
+    - Le nom à inscrire sur la réservation est [Gomez](customer_name).
+    - La réservation sera au nom de [Diaz](customer_name).
+    - Mettez la réservation au nom de [Alvarez](customer_name).
+    - pour [Martin](customer_name)
+    - pour [Dupont](customer_name)
+    - pour [Garcia](customer_name)
+    - pour [Lefevre](customer_name)
+    - pour [Dubois](customer_name)
+    - pour [Lopez](customer_name)
+    - pour [Perez](customer_name)
+    - pour [Sanchez](customer_name)
+    - pour [Rodriguez](customer_name)
+    - pour [Gomez](customer_name)
+    - pour [Martinez](customer_name)
+    - pour [Hernandez](customer_name)
+    - pour [Alvarez](customer_name)
+    - pour [Ramirez](customer_name)
+    - pour [Gonzalez](customer_name)
+    - pour [Diaz](customer_name)
+    - pour [Torres](customer_name)
+    - pour [Ruiz](customer_name)
+    - pour [Moreno](customer_name)
+    - [Smith](customer_name)
+    - [Johnson](customer_name)
+    - [Williams](customer_name)
+    - [Jones](customer_name)
+    - [Brown](customer_name)
+    - [Davis](customer_name)
+    - [Miller](customer_name)
+    - [Wilson](customer_name)
+    - [Moore](customer_name)
+    - [Taylor](customer_name)
+    - [Anderson](customer_name)
+    - [Thomas](customer_name)
+    - [Jackson](customer_name)
+    - [White](customer_name)
+    - [Harris](customer_name)
+    - [Martin](customer_name)
+    - [Thompson](customer_name)
+    - [Garcia](customer_name)
+    - [Martinez](customer_name)
+    - [Robinson](customer_name)
+
+- intent: phone
+  examples: |
+    - Mon numéro de téléphone est [0712345678](n_phone).
+    - Vous pouvez me joindre au [07 12 34 56 78](n_phone).
+    - Oui, voici mon numéro de téléphone : [+33712345678](n_phone).
+    - Mon numéro de téléphone est [07.12.34.56.78](n_phone).
+    - Vous pouvez me contacter au [+33(0)712345678](n_phone).
+    - Oui, mon numéro est le [07-12-34-56-78](n_phone).
+    - Voici mon numéro : [07.12.34.56.78](n_phone).
+    - Mon numéro de téléphone : [+33 7.12.34.56.78](n_phone).
+    - Vous pouvez me joindre au [07 12.34.56.78](n_phone).
+    - Oui, mon numéro est [+33712345678](n_phone).
+    - Voici mon numéro de téléphone : [07-12-34-56-78](n_phone).
+    - Mon numéro est le [+33 712345678](n_phone).
+    - Oui, mon numéro est [07.12.34.56.78](n_phone).
+    - Mon numéro de téléphone est : [+33 (0)7 12 34 56 78](n_phone).
+    - Vous pouvez me contacter au [07.12.34.56.78](n_phone).
+    - Oui, voici mon numéro : [+337.12.34.56.78](n_phone).
+    - Mon numéro de téléphone : [07-12-34-56-78](n_phone).
+    - Mon numéro est le [+33 7 12 34 56 78](n_phone).
+    - Oui, mon numéro est [07 12.34.56.78](n_phone).
+    - Voici mon numéro : [+33 7.12.34.56.78](n_phone).
+    - [0712345678](n_phone)
+    - [07 12 34 56 78](n_phone)
+    - [+33712345678](n_phone)
+    - [07.12.34.56.78](n_phone)
+    - [+33(0)712345678](n_phone)
+    - [07-12-34-56-78](n_phone)
+    - [07.12.34.56.78](n_phone)
+    - [+33 7.12.34.56.78](n_phone)
+    - [07 12.34.56.78](n_phone)
+    - [+33712345678](n_phone)
+    - [07-12-34-56-78](n_phone)
+    - [+33 712345678](n_phone)
+    - [07.12.34.56.78](n_phone)
+    - [+33 (0)7 12 34 56 78](n_phone)
+    - [07.12.34.56.78](n_phone)
+    - [+337.12.34.56.78](n_phone)
+    - [07-12-34-56-78](n_phone)
+    - [+33 7 12 34 56 78](n_phone)
+    - [07 12.34.56.78](n_phone)
+    - [+33 7.12.34.56.78](n_phone)
+
+- intent: confirm
   examples: |
     - Oui
     - Exactement
     - C'est ça
 
-- lookup: city
+- intent: cancel
   examples: |
-    - Paris
-    - Marseille
-    - Lyon
-    - Toulouse
-    - Nice
-    - Nantes
-    - Strasbourg
-    - Montpellier
-    - Bordeaux
-    - Lille
-    - Rennes
-    - Reims
-    - Le Havre
-    - Saint-Étienne
-    - Toulon
-    - Grenoble
-    - Dijon
-    - Angers
-    - Nîmes
-    - Villeurbanne
-    - Saint-Denis
-    - Le Mans
-    - Aix-en-Provence
-    - Clermont-Ferrand
-    - Brest
-    - Limoges
-    - Tours
-    - Amiens
-    - Perpignan
-    - Metz
-    - Besançon
-    - Boulogne-Billancourt
-    - Orléans
-    - Saint-Denis
-    - Argenteuil
-    - Rouen
-    - Montreuil
-    - Mulhouse
-    - Caen
-    - Saint-Paul
-    - Nancy
-    - Tourcoing
-    - Roubaix
-    - Nanterre
-    - Vitry-sur-Seine
-    - Avignon
-    - Créteil
-    - Dunkerque
-    - Poitiers
-    - Asnières-sur-Seine
-    - Courbevoie
-    - Versailles
-    - Colombes
-    - Fort-de-France
-    - Aulnay-sous-Bois
-    - Saint-Pierre
-    - Rueil-Malmaison
-    - Pau
-    - Aubervilliers
-    - Le Tampon
-    - Antibes
-    - La Rochelle
-    - Champigny-sur-Marne
-    - Saint-Maur-des-Fossés
-    - Calais
-    - Issy-les-Moulineaux
-    - La Seyne-sur-Mer
-    - Noisy-le-Grand
-    - Sarcelles
-    - Levallois-Perret
-    - Ajaccio
-    - Vénissieux
-    - Cergy
-    - Saint-Quentin
-    - Béziers
-    - Pessac
-    - La Roche-sur-Yon
-    - Cholet
-    - Charleville-Mézières
-    - Saint-Nazaire
-    - Chambéry
-    - Beauvais
-    - Grasse
-    - Tarbes
-    - Vannes
-    - Lorient
-    - Évreux
-    - Marcq-en-Barœul
-    - Villeneuve-d'Ascq
-    - Bastia
-    - Niort
-    - Cambrai
-    - Colmar
-    - Pontault-Combault
-    - Vincennes
-    - Sète
-    - Albi
-    - Sartrouville
-    - Livry-Gargan
-    - Maisons-Alfort
-    - Ivry-sur-Seine
-    - Chalon-sur-Saône
-    - Meaux
-    - Saint-Germain-en-Laye
-    - Gagny
-    - Saint-Laurent-du-Maroni
-    - Bagneux
-    - Montrouge
-    - Saint-Cloud
-    - Chelles
-    - Compiègne
-    - Bondy
-    - Clamart
-    - Clichy
-    - Troyes
-    - Nevers
-    - Les Abymes
-    - Le Blanc-Mesnil
-    - Noisy-le-Sec
-    - Vaulx-en-Velin
-    - Sartrouville
-    - Échirolles
-    - Meudon
-    - Saint-Benoît
-    - Vienne
-    - Rosny-sous-Bois
-    - L'Haÿ-les-Roses
-    - Épinal
-    - Alfortville
-    - Savigny-sur-Orge
-    - Saint-Ouen
-    - Bastia
-    - Sevran
-    - Sainte-Marie
-    - Gap
-    - Bagnolet
-    - Saint-Leu
-    - Châlons-en-Champagne
-    - Saint-Priest
-    - Wattrelos
-    - Lens
-    - Conflans-Sainte-Honorine
-    - Montluçon
-    - La Courneuve
-    - Saint-Martin-d'Hères
-    - Palaiseau
-    - Auxerre
-    - Le Perreux-sur-Marne
-    - Cormeilles-en-Parisis
-    - Neuilly-sur-Marne
-    - Villejuif
-    - Savigny-le-Temple
-    - Saint-Raphaël
-    - Massy
-    - Le Cannet
-    - Liévin
-    - Houilles
-    - Hyères
-    - Garges-lès-Gonesse
-    - La Ciotat
-    - Épinal
-    - Le Plessis-Robinson
-    - Le Kremlin-Bicêtre
-    - Villefranche-sur-Saône
-    - Châtillon
-    - Saint-Chamond
-    - Villepinte
-    - Sarreguemines
-    - Savigny-sur-Orge
-    - Montereau-Fault-Yonne
-    - Stains
-    - Fontenay-sous-Bois
-    - Talence
-    - Concarneau
-    - Yerres
-    - Le Lamentin
-    - Puteaux
-    - Villiers-sur-Marne
-    - Trappes
-    - Thonon-les-Bains
-    - La Garenne-Colombes
-    - Six-Fours-les-Plages
-    - Cachan
-    - Les Mureaux
-    - Maubeuge
-    - Châtenay-Malabry
-    - Villeurbanne
-    - Chatou
-    - L'Haÿ-les-Roses
-    - Sannois
-    - La Possession
-    - Savigny-le-Temple
-    - Le Mée-sur-Seine
-    - Le Chesnay-Rocquencourt
-    - Drancy
-    - Schiltigheim
-    - Sainte-Geneviève-des-Bois
-    - Vandœuvre-lès-Nancy
-    - Roanne
-    - Saint-Étienne-du-Rouvray
-    - Belfort
-    - Périgueux
-    - Gennevilliers
-    - Saint-Médard-en-Jalles
-    - Agen
-    - Rezé
-    - Goussainville
-    - Ris-Orangis
-    - Saint-Malo
-    - Annemasse
-    - Villenave-d'Ornon
-    - Montigny-le-Bretonneux
-    - Villemomble
-    - Sainte-Marie
-    - Gif-sur-Yvette
-    - Cagnes-sur-Mer
-    - Saint-Martin-d'Hères
-    - Choisy-le-Roi
-    - Anglet
-    - Romainville
-    - Vandœuvre-lès-Nancy
-    - Schiltigheim
-    - Saint-Étienne-du-Rouvray
-    - Belfort
-    - Périgueux
-    - Gennevilliers
-    - Saint-Médard-en-Jalles
-    - Agen
-    - Rezé
-    - Goussainville
-    - Ris-Orangis
-    - Saint-Malo
-    - Annemasse
-    - Villenave-d'Ornon
-    - Montigny-le-Bretonneux
-    - Villemomble
-    - Sainte-Marie
-    - Gif-sur-Yvette
-    - Cagnes-sur-Mer
-    - Saint-Martin-d'Hères
-    - Choisy-le-Roi
-    - Anglet
-    - Romainville
+    - Non
+    - annuler
+    - faux
 
+# - intent: comment
+#   examples: |
+#     - Non
+#     - annuler
+#     - faux
 
-- lookup: date
+- regex: date
   examples: |
-    - 9 janvier
-    - 15 février
-    - 3 mars
-    - 22 avril
-    - 18 mai
-    - 11 juin
-    - 7 juillet
-    - 30 août
-    - 25 septembre
-    - 16 octobre
-    - 9 novembre
-    - 5 décembre
-    - 25 janvier 2024
-    - 08 février 2024
-    - 13 mars 2024
-    - 19 avril 2024
-    - 11 mai 2024
-    - 6 juin 2024
-    - 15 juillet 2024
-    - 28 août 2024
-    - 14 septembre 2024
-    - 20 octobre 2024
-    - 5 novembre 2024
-    - 23 décembre 2024
+    - \d{1,2}\/\d{1,2}\/\d{2,4}
+
+- regex: customer_name
+  examples: |
+    - [A-Za-z]+
+    - [A-Za-z-' ]+
+    - [A-Z]+
+    - [a-z]+
+
+- regex: n_phone
+  examples: |
+    - (?:\+33|0)[1-9](?:\d{2}){4}
+    - (?:\+33|0)[1-9]\d{8}
+    - (?:\+33|0)[1-9]\d{2}\.\d{2}\.\d{2}\.\d{2}

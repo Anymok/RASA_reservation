@@ -1,17 +1,56 @@
 version: "3.1"
 
 stories:
-- story: st_salutation
-  steps:
-  - intent: salutation
-  - action: utter_salutation
+  - story: st_salutation
+    steps:
+    - intent: salutation
+    - action: utter_salutation
 
-- story: st_booking
-  steps:
-  - intent: booking
-  - action: utter_when
-  - intent: when
-  - action: utter_where
-  - intent: where
-  - action: utter_end
-  - intent: end
+  - story: st_new_booking
+    steps:
+    - intent: booking
+    - action: utter_when
+    - intent: when
+      entities: 
+      - entity_name: date
+    - action: utter_howmany
+    - intent: howmany
+      entities: 
+      - entity_name: nb_person
+    - action: action_check_enough_space
+
+  - story: st_new_booking_confirm
+    steps:
+    - intent: name
+      entities: 
+      - entity_name: customer_name
+    - action: utter_phone
+    - intent: phone
+      entities: 
+      - entity_name: n_phone
+    - action: action_create_booking
+
+  - story: st_cancel_booking
+    steps:
+    - intent: cancel_booking
+    - action: utter_cancel_booking
+
+  - story: st_info_booking
+    steps:
+    - intent: info_booking
+    - action: utter_info_booking
+
+  - story: st_menu_of_the_day
+    steps:
+    - intent: menu_of_the_day
+    - action: utter_menu_of_the_day
+  
+  - story: st_allergens
+    steps:
+    - intent: allergens
+    - action: utter_allergens
+
+  - story: st_menu
+    steps:
+    - intent: menu
+    - action: utter_menu

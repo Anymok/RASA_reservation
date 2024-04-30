@@ -8,7 +8,7 @@ rules:
     - available: true
   steps:
     - intent: confirm
-    - action: utter_confirm_booking
+    - action: utter_name
 
 - rule: availablecancel
   condition:
@@ -16,7 +16,6 @@ rules:
     - available: true
   steps:
     - intent: cancel
-    - action: utter_cancel_booking
 
 - rule: notavailableaffirm
   condition:
@@ -24,7 +23,7 @@ rules:
     - available: false
   steps:
     - intent: confirm
-    - action: utter_confirm_booking
+    # Boucle retourne vers date
 
 - rule: notavailablecancel
   condition:
@@ -32,4 +31,8 @@ rules:
     - available: false
   steps:
     - intent: cancel
-    - action: utter_cancel_booking
+
+- rule: bye
+  steps:
+    - intent: bye
+    - action: utter_bye

@@ -3,6 +3,12 @@ version: "3.1"
 intents:
   - salutation
   - booking
+  - cancel_booking
+  - info_booking
+  - menu_of_the_day
+  - allergens
+  - menu
+  - bye
   - when
   - howmany
   - name
@@ -12,6 +18,7 @@ intents:
 
 actions:
   - action_check_enough_space
+  - action_create_booking
 
 entities:
   - date
@@ -58,30 +65,54 @@ slots:
 responses:
   utter_salutation:
   - text: |
-      - Bonjour !
-      - Que puis-je pour vous ?
+      Bonjour !
+      Voici les choix disponibles :
+      - Nouvelle réservation
+      - Annuler une réservation
+      - Info sur une réservation
+      - Menu du jour
+      - Liste des allergènes
+      - Lien vers la carte  
+      
 
+# New booking
   utter_when:
-  - text: |
-      - Bien sûr, pour quelle date ?
+  - text: Bien sûr, pour quelle date ? (JJ/MM/YYYY)
 
   utter_howmany:
-  - text: |
-      - Parfait, pour combien de personne ?
+  - text: Parfait, pour combien de personne ?
   
   utter_name:
-  - text: |
-      - C'est noté, quel nom pour la réservation ?
+  - text: C'est noté, quel nom pour la réservation ?
   
   utter_phone:
   - text: Avez-vous un numéro de téléphone ?
 
-  utter_confirm_booking:
-  - text: confirm
-  
+# Cancel booking  
   utter_cancel_booking:
-  - text: cancel
-  
+  - text: Veuillez saisir le code de réservation
+
+# Info booking
+  utter_info_booking:
+  - text: Veuillez saisir le code de réservation
+
+# Menu of the day
+  utter_menu_of_the_day:
+  - text: Le menu du jour comporte un plateau de fromage
+
+# Allergens
+  utter_allergens:
+  - text: Liste des allergènes est disponible ici.
+
+# Menu
+  utter_menu:
+  - text: La carte est disponible ici.
+
+# bye
+  utter_bye:
+  - text: Au revoir !
+
+
   utter_end:
   - text: |
       - Parfait, vous venez de reserver une table pour {slot_nb} personne(s) au {slot_date}.

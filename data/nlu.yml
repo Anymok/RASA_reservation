@@ -13,11 +13,44 @@ nlu:
 
 - intent: booking
   examples: |
+    - Nouvelle réservation
     - Je voudrais faire une réservation.
     - Est-ce que je pourrais réserver une table ?
     - Pouvez-vous me réserver une table ?
     - J'aimerais réserver une table.
     - Est-il possible d'avoir une réservation ?
+
+- intent: cancel_booking
+  examples: |
+    - Annuler une réservation
+    - Annuler
+
+- intent: info_booking
+  examples: |
+    - Info sur une réservation
+    - Info
+
+- intent: menu_of_the_day
+  examples: |
+    - Menu du jour
+    - Plat du jour
+
+- intent: allergens
+  examples: |
+    - Liste des allergènes
+    - allergènes
+
+- intent: menu
+  examples: |
+    - Lien vers la carte
+    - carte
+
+- intent: bye
+  examples: |
+    - Au revoir
+    - a bientot
+    - bonne soirée
+    - adieu
 
 - intent: when
   examples: |
@@ -27,12 +60,12 @@ nlu:
 
 - intent: howmany
   examples: |
-    - pour [5](nb_person) personnes.
-    - pour [60](nb_person) personnes.
-    - [2](nb_person) personnes.
-    - [60](nb_person) personnes.
-    - [7](nb_person)
-    - [55](nb_person)
+    - pour [5]{"entity": "nb_person"} personnes.
+    - pour [60]{"entity": "nb_person"} personnes.
+    - [2]{"entity": "nb_person"} personnes.
+    - [60]{"entity": "nb_person"} personnes.
+    - [7]{"entity": "nb_person"}
+    - [55]{"entity": "nb_person"}
 
 - intent: name
   examples: |
@@ -150,13 +183,15 @@ nlu:
     - annuler
     - faux
 
+# - intent: comment
+#   examples: |
+#     - Non
+#     - annuler
+#     - faux
+
 - regex: date
   examples: |
     - \d{1,2}\/\d{1,2}\/\d{2,4}
-
-- regex: nb_person
-  examples: |
-    - \d+
 
 - regex: customer_name
   examples: |

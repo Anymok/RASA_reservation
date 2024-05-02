@@ -23,7 +23,7 @@ rules:
     - available: false
   steps:
     - intent: confirm
-    # Boucle retourne vers date
+    - action: utter_when
 
 - rule: notavailablecancel
   condition:
@@ -36,3 +36,37 @@ rules:
   steps:
     - intent: bye
     - action: utter_bye
+  
+- rule: addcommentaffirm
+  condition:
+  - slot_was_set:
+    - bookingExist: true
+    - infoResa: true
+  steps:
+    - intent: confirm
+    - action: utter_comment
+
+- rule: addcommentcancel
+  condition:
+  - slot_was_set:
+    - bookingExist: true
+    - infoResa: true
+  steps:
+    - intent: cancel
+  
+- rule: deletebookingaffirm
+  condition:
+  - slot_was_set:
+    - bookingExist: true
+    - infoResa: false
+  steps:
+    - intent: confirm
+    - action: action_delete_booking
+
+- rule: deletebookingcancel
+  condition:
+  - slot_was_set:
+    - bookingExist: true
+    - infoResa: false
+  steps:
+    - intent: cancel

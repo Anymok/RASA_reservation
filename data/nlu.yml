@@ -45,6 +45,13 @@ nlu:
     - Lien vers la carte
     - carte
 
+- intent: comment
+  examples: |
+    - [Ceci est un exemple de commentaire]{"entity": "commententity"}
+    - [Je voudrai un gateau surprise]{"entity": "commententity"}
+    - [C'est pour un anniversaire surprise]{"entity": "commententity"}
+    - [C'est pour un mariage]{"entity": "commententity"}
+
 - intent: bye
   examples: |
     - Au revoir
@@ -183,11 +190,11 @@ nlu:
     - annuler
     - faux
 
-# - intent: comment
-#   examples: |
-#     - Non
-#     - annuler
-#     - faux
+- intent: code_resa
+  examples: |
+    - Mon code de réservation est: [5]{"entity": "bookingId"}
+    - [52]{"entity": "bookingId"}
+    - [505]{"entity": "bookingId"}
 
 - regex: date
   examples: |

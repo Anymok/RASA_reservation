@@ -12,33 +12,51 @@ stories:
     - action: utter_when
     - intent: when
       entities: 
-      - entity_name: date
+      - entity_name: slot_date
     - action: utter_howmany
     - intent: howmany
       entities: 
-      - entity_name: nb_person
+      - entity_name: slot_nb
     - action: action_check_enough_space
 
   - story: st_new_booking_confirm
     steps:
+    - or:
+      - slot_was_set:
+        - available: true
     - intent: name
       entities: 
-      - entity_name: customer_name
+      - entity_name: slot_name
     - action: utter_phone
     - intent: phone
       entities: 
-      - entity_name: n_phone
+      - entity_name: slot_n_phone
     - action: action_create_booking
+    - action: utter_comment
+    - intent: comment
+      entities: 
+      - entity_name: slot_comment
+    - action: action_update_booking_comment
 
   - story: st_cancel_booking
     steps:
     - intent: cancel_booking
+    - action: action_set_slot_cancel
     - action: utter_cancel_booking
+    - intent: code_resa
+      entities: 
+      - entity_name: slot_code_resa
+    - action: action_check_code_resa
 
   - story: st_info_booking
     steps:
     - intent: info_booking
+    - action: action_set_slot_info
     - action: utter_info_booking
+    - intent: code_resa
+      entities: 
+      - entity_name: slot_code_resa
+    - action: action_check_code_resa
 
   - story: st_menu_of_the_day
     steps:
@@ -54,3 +72,14 @@ stories:
     steps:
     - intent: menu
     - action: utter_menu
+
+  - story: st_addcommentaffirm
+    steps:
+    - or:
+      - slot_was_set:
+        - bookingExist: true
+        - infoResa: true
+    - intent: comment
+      entities: 
+      - entity_name: slot_comment
+    - action: action_update_booking_comment

@@ -15,20 +15,41 @@ intents:
   - phone
   - confirm
   - cancel
+  - comment
+  - code_resa
 
 actions:
   - action_check_enough_space
   - action_create_booking
+  - action_check_code_resa
+  - action_update_booking_comment
+  - action_set_slot_cancel
+  - action_set_slot_info
+  - action_delete_booking
 
 entities:
   - date
   - nb_person
   - customer_name
   - n_phone
+  - commententity
+  - bookingId
 
 
 slots:
   available:
+    type: bool
+    influence_conversation: true
+    mappings:
+    - type: custom
+
+  bookingExist:
+    type: bool
+    influence_conversation: true
+    mappings:
+    - type: custom
+
+  infoResa:
     type: bool
     influence_conversation: true
     mappings:
@@ -47,6 +68,20 @@ slots:
     mappings:
     - type: from_entity
       entity: nb_person
+  
+  slot_code_resa:
+    type: float
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: bookingId
+  
+  slot_comment:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: commententity
 
   slot_date:
     type: text
@@ -112,11 +147,9 @@ responses:
   utter_bye:
   - text: Au revoir !
 
-
-  utter_end:
-  - text: |
-      - Parfait, vous venez de reserver une table pour {slot_nb} personne(s) au {slot_date}.
-      - La réservation a été faite au nom de {slot_name} et avec le téléphone {slot_n_phone}
+# comment
+  utter_comment:
+  - text: Veuillez saisir le commentaire
       
       
 session_config:

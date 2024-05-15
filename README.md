@@ -46,3 +46,11 @@ NON VALIDE :
 
     - Intégrer le bot sur une plateforme
 
+# BUG
+
+    - Commentaire : Il faut mettre un message comme dans les intents sinon il est pas reconnu
+    - Base de données : Certain wifi bug l'accès à la BDD (comme l'EPSI :) )
+    - Mélange avec les numéros : parfois le bot se mélange lorsque l'on saisit un numéro et perd la story. La solution est de regarder les intents et essayer de rajouter des mots pour être plus précis.
+    
+
+

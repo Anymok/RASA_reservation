@@ -19,13 +19,15 @@
  - Open terminal and execute :
     - .\.env\Scripts\activate
     - py -m rasa shell
+ - Open second terminal and execute :
+   - .\.env\Scripts\activate
+   - py -m rasa run actions
 
 
 
-# TODO
- - requirement.txt
+# FONCTIONNALITE
 
- Faire fonctionner un bot qui prend une réservation pour un restaurant :
+OK :
 
     - Réserver une table
     - Annuler une réservation
@@ -33,16 +35,14 @@
     - Obtenir la liste des allergènes
     - Obtenir le menu du jour
     - Obtenir le liens vers le menu complet
-
-
     - Date de réservation, Nombre de personnes, Nom de réservation, Numéro de téléphone
     - Ajouter un commentaire à la réservation
-
-
     - Vérifier si disponible
     - Obtenir un numéro de réservation
-    
+    - Fournir l’ensemble des fichiers sur un git(hub/lab/autre), bonus si usage d’image docker ! 
+
   
+NON VALIDE :
 
     - Intégrer le bot sur une plateforme
-    - Fournir l’ensemble des fichiers sur un git(hub/lab/autre), bonus si usage d’image docker ! 
+
